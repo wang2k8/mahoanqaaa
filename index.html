@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji_Encoder_NQA</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Kết nối với tệp CSS -->
+</head>
+<body>
+
+    <h1>Mã hóa văn bản bằng Emoji</h1>
+    <div class="container">
+        <textarea id="inputText" placeholder="Nhập văn bản của bạn ở đây..."></textarea>
+        <div class="button-container">
+            <button onclick="encryptText()">Mã hóa</button>
+            <button onclick="decryptText()">Dịch mã</button>
+            <button onclick="copyToClipboard()">Sao chép</button>
+            <button onclick="pasteFromClipboard()">Dán</button>
+            <button onclick="clearInput()">Xóa</button>
+        </div>
+
+        <div id="encryptedText"></div>
+
+        <div class="keyboard">
+            <div class="key" onclick="addToInput('q')">Q</div>
+            <div class="key" onclick="addToInput('w')">W</div>
+            <div class="key" onclick="addToInput('e')">E</div>
+            <div class="key" onclick="addToInput('r')">R</div>
+            <div class="key" onclick="addToInput('t')">T</div>
+            <div class="key" onclick="addToInput('y')">Y</div>
+            <div class="key" onclick="addToInput('u')">U</div>
+            <div class="key" onclick="addToInput('i')">I</div>
+            <div class="key" onclick="addToInput('o')">O</div>
+            <div class="key" onclick="addToInput('p')">P</div>
+            <div class="key" onclick="addToInput('a')">A</div>
+            <div class="key" onclick="addToInput('s')">S</div>
+            <div class="key" onclick="addToInput('d')">D</div>
+            <div class="key" onclick="addToInput('f')">F</div>
+            <div class="key" onclick="addToInput('g')">G</div>
+            <div class="key" onclick="addToInput('h')">H</div>
+            <div class="key" onclick="addToInput('j')">J</div>
+            <div class="key" onclick="addToInput('k')">K</div>
+            <div class="key" onclick="addToInput('l')">L</div>
+            <div class="key" onclick="addToInput('z')">Z</div>
+            <div class="key" onclick="addToInput('x')">X</div>
+            <div class="key" onclick="addToInput('c')">C</div>
+            <div class="key" onclick="addToInput('v')">V</div>
+            <div class="key" onclick="addToInput('b')">B</div>
+            <div class="key" onclick="addToInput('n')">N</div>
+            <div class="key" onclick="addToInput('m')">M</div>
+            <div class="key" onclick="addToInput(' ')">SPACE</div>
+            <div class="key" onclick="deleteLastCharacter()">Xóa ký tự</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Kết nối với tệp JavaScript -->
+</body>
+</html>
